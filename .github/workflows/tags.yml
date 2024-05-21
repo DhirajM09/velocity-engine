@@ -41,12 +41,12 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean verify
 
-      - name: Upload jradius jar
+      - name: Upload velocity-engine jar
         uses: actions/upload-artifact@v3
         with:
           path: apps/target/*.jar
 
-      - name: Upload jradius zip
+      - name: Upload velocity-engine zip
         uses: actions/upload-artifact@v3
         with:
           path: client/target/*.zip
